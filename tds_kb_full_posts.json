@@ -1,0 +1,152 @@
+[
+  {
+    "title": "GA4 - Data Sourcing - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga4-data-sourcing-discussion-thread-tds-may-2025/178881/2",
+    "content": "Please post any questions related to Graded Assignment 4 - Data Sourcing.\n\nDeadline:  Sunday, June 22, 2025 11:59 PM\n\n@carlton @Jivraj @HritikRoshan_HRM"
+  },
+  {
+    "title": "Project1 - Virtual TA - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/project1-virtual-ta-discussion-thread-tds-may-2025/176077",
+    "content": "Please post any questions related to Project 1\n\nPlease use markdown code formatting (fenced code blocks beginning with ```) when sharing code (rather than screenshots). It’s easier for us to copy-paste and test.\n\nDeadline:  Today 11:59 PM\n\nDeadline:  June 18, 2025 11:59 PM"
+  },
+  {
+    "title": "TDS | References | Guidelines",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/tds-references-guidelines/67216",
+    "content": "Course Portal\n\nPublic Course Portal Link\n\nInstructors\nPrasanna - @iamprasna\nCarlton - @carlton\nTags Usage\nPractice Question - Week-numPractice-question\nGraded Question - Week-numGraded-question\nOperational - operational\nExam - quiz\nProject - project-num\nTerm - termNum-YYYY\nCalendar\nCourse/subject calendar\nImportant Links\n\nGrading Document\n\nAnnouncement Group\n\nOfficial YouTube channel\n\nPurpose of ROE\n\nCourse Feedback\n\nHere’s students’ feedback:\n\nIt used to be an easy course until 2024. # # #\nNow it’s hard and covers more. Take it in your last semester if possible. # # #\nPlan extra time. It takes more time than typical 3-credit courses. # # #\nLLMs grade you – unpredictably. # #\nThe ROE is hard. #"
+  },
+  {
+    "title": "About the Tools in Data Science category",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/about-the-tools-in-data-science-category/23335",
+    "content": "This category is created to address subject-specific queries related to Tools in Data Science\n\n- Why should people use this category? What is it for?\n\n\nThe larger goal of the Discourse forum is to act as a Knowledge base for the course. You can make this more productive by\n\nElaborating your question sufficiently and supporting it with steps that you have already tried at your end before posting this question\n\nSharing additional content or explanations related to the topic being discussed\n\n-  Are there any rules for posting in this category?\n\n\nBefore you create a new post, review the existing threads to see if there are already highly similar or identical postings. Discourse will suggest similar posts once you start typing titles\n\nTag the post appropriately so that it gets indexed correctly in our Knowledge Base. For instance, if your query is on an Activity Question in Week 1 then use the tags #activity-question, #week-1\n\nProvide a meaningful title to your post that contains the topic/details of your query so that it can be searched by others easily. For instance: Do not use the titles like “AQ1.1 Q3” which just gives question number alone. Instead use a more meaningful title like - “Need help in calculating the N^{th} prime number”\n\nType in your question and explanations rather than pasting images or screenshots.\n\n- What is NOT Permitted in this category?\n\n\nBeing argumentative or sarcastic\n\nUse of abusive/strong language\n\nPosting support/logistics related query\n\nUnnecessarily tagging Faculty/Instructors in posts\n\nPosting Solutions or discussing solutions to graded assignments\n\n- Who will be moderating the content in this forum?\n\n\nThe foum will be moderated by Course Instructors. They will have the authority to decide whether a post violates forum rules/guidelines. You can flag/report any such violations that you observe by clicking on  icon on the post. Please do mention the reason why you are flagging the topic.\n\n  - What are the disciplinary actions if some one violates the rules and guidelines of the forum? \n\n\nThe flagged posts that violates forum rules/guidelines will be hidden. Repeated violation of the rules can result in the offender being removal from the forum."
+  },
+  {
+    "title": "Help required in Project 1 - scrapping Discourse data",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/help-required-in-project-1-scrapping-discourse-data/179153",
+    "content": "Hello,\nI’m new to coding and still learning. I’m trying to scrape data from a Discourse forum and have identified the relevant API endpoint. However, I’m having trouble with authentication—I keep receiving a 403 error stating that the user is not logged in or doesn’t have permission to perform the action.\n\nI’ve tried using the most recent cookies from my browser, but I still get the same error. Can someone help me figure out what I’m doing wrong?"
+  },
+  {
+    "title": "A humble request to the TDS Course Team",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/a-humble-request-to-the-tds-course-team/179034",
+    "content": "@carlton and @Jivraj\n\nRespected Sir\n\nIt was my first time doing web scraping and other tasks required for this project. After watching the live sessions, I realized that my approach was wrong. The live sessions are really good but, they are being conducted too close to the deadline (started on 10th June). In the sessions, it was said that this project could be completed in a day, but I don’t feel that this is the case for me (not even close), though that might just be my own inefficiency.\n\nAside from that, the method of using the Gemini model demonstrated in the sessions only allowed me to generate embeddings for the first 100 chunks (max per day), there are way more than that in my workflow. I have to spend time finding other alternatives to create embeddings before I make the final submission with the openAI api. So, I humbly request, if it is possible, please consider extending the deadline by a few days. There is not enough time to absorb what was taught in the live sessions and implement it as complete beginner.\n\nThank you."
+  },
+  {
+    "title": "Project 1 submission deadline",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/project-1-submission-deadline/179145",
+    "content": "@carlton Sir could you please extend the deadline for the submission of the project-1 by one more day."
+  },
+  {
+    "title": "Having issue while submitting the project",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/having-issue-while-submitting-the-project/179139",
+    "content": "Hello, i decided to deploy my virtual assistant project for TDS May 2025 term on Render.\nthe url is accepting GET requests for “/” endpoint and POST requests for “/api/” endpoint as instructed by Sirs. but it seems that the form where i’m supposed to provide github repo link and deployment public url, is sending an OPTIONS request to my Render deployed application, which it is dismissing by saying method not allowed. what to do??\n\nEDIT: enabling CORS let me send an OPTIONS request from the submission form so i was able to submit.\n\nlater i sent promptfoo as well as regular curls to Render url and they worked too. Although once it shut down, it just isn’t starting back up again; sending curls now gives me some really long html and doesn’t even send any api calls to the render url. what to do?\n\n@carlton @Jivraj"
+  },
+  {
+    "title": "Hello I need some help",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/hello-i-need-some-help/179142",
+    "content": "I want some help in tds project"
+  },
+  {
+    "title": "TDS Project 1 2025 issue in submitting the project",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/tds-project-1-2025-issue-in-submitting-the-project/179135",
+    "content": "(topic deleted by author)"
+  },
+  {
+    "title": "Drop Course Window",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/drop-course-window/179104",
+    "content": "@carlton sir I’m unable to continue with the course, is it possible to drop course somehow, the option is not visible anywhere. Please guide.\nRegards\nNitin Dixit\n23f2005404"
+  },
+  {
+    "title": "TDS Project 1 2025",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/tds-project-1-2025/179103",
+    "content": "I’ve watched the YouTube sessions for Project 1, but I’m feeling quite confused. I’ve managed to scrape data from Discourse, and the content is now saved in multiple files. I’ve converted these files into .md (Markdown) format, but I’m having trouble handling the images — I’m not able to extract or display them properly. Can anyone help?"
+  },
+  {
+    "title": "GA5 Question 8 Clarification",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939",
+    "content": "image\n756×295 19.5 KB\n\nThe question asks to use gpt-3.5-turbo-0125 model but the ai-proxy provided by Anand sir only supports gpt-4o-mini. So should we just use gpt-4o-mini or use the OpenAI API for gpt3.5 turbo?\n@carlton"
+  },
+  {
+    "title": "Hoe to get disclosure api",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/hoe-to-get-disclosure-api/179010",
+    "content": "can anyone help with this problem"
+  },
+  {
+    "title": "Doubt regarding Promptfoo in TDS Project 1",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/doubt-regarding-promptfoo-in-tds-project-1/179012",
+    "content": "My promptfoo is showing this output when I run it, but while using curl, i get appropriate response. What should I do?\n\n\nScreenshot 2025-06-12 at 11.38.44 PM\n3024×434 172 KB\n\nScreenshot 2025-06-12 at 11.37.17 PM\n1272×1490 151 KB"
+  },
+  {
+    "title": "Getting an api key error upon running npx -y promptfoo eval –config project-tds-virtual-ta-promptfoo.yaml",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/getting-an-api-key-error-upon-running-npx-y-promptfoo-eval-config-project-tds-virtual-ta-promptfoo-yaml/178878",
+    "content": "[FAIL] API error: 401 Unauthorized {“error”:{“message”:\"Inc… API key provided: sk-proj-*************** You can find your API key at https://platform.openai.…"
+  },
+  {
+    "title": "Submissions of Weekly Graded Assignment of TDS",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/submissions-of-weekly-graded-assignment-of-tds/178618/2",
+    "content": "@Jivraj @21f3002441\nI have submitted the weekly graded assignments for Tools in Data science, from the correct google account and yet it has been showing not submitted from the past three weeks. Could you help me with this?\n\ncomplaint1\n900×874 122 KB\n, this is shown and yet it is showing not submitted in the grades section\n\nsimilar problem for all three weeks. Please let me know"
+  },
+  {
+    "title": "Api Key Error",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/api-key-error/178898",
+    "content": "(venv) C:\\Users\\User\\Desktop\\TDS Folder>python scrape/embed_documents.py\n Embedding documents: 0it [00:00, ?it/s] Error getting embedding: Error code: 401 - {‘error’: {‘message’: ‘Your authentication token is\nnot from a valid issuer.’, ‘type’: ‘invalid_request_error’, ‘param’: None, ‘code’: ‘invalid_issuer’}}\n Embedding documents: 1it [00:00, 1.26it/s] Error getting embedding: Error code: 401 - {‘error’: {‘message’: ‘Your authentication token\nis not from a valid issuer.’, ‘type’: ‘invalid_request_error’, ‘param’: None, ‘code’: ‘invalid_issuer’}}\n Embedding documents: 2it [00:01, 1.95it/s] Error getting embedding: Error code: 401 - {‘error’: {‘message’: ‘Your authentication token\nis not from a valid issuer.’, ‘type’: ‘invalid_request_error’, ‘param’: None, ‘code’: ‘invalid_issuer’}}\n Embedding documents: 3it [00:01, 2.08it/s]"
+  },
+  {
+    "title": "Guide for tds project 1",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/guide-for-tds-project-1/178649",
+    "content": "Where can I get a reference or some material that may Guide me to complete the project."
+  },
+  {
+    "title": "How to find API key for discourse page",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/how-to-find-api-key-for-discourse-page/178166",
+    "content": "I want to access the API key of dicourse page for tds project 1. kindly suggest some ways to access it."
+  },
+  {
+    "title": "TDS project 1,I face ambiguati to make this project,how can I start?",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/tds-project-1-i-face-ambiguati-to-make-this-project-how-can-i-start/154294",
+    "content": "pleas help me for make this project1,in tooi in datascience"
+  },
+  {
+    "title": "Marks of GA1",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/marks-of-ga1/177878",
+    "content": "even till not i havent got any email regarding my marks in ga 1\ni submitted that on time also with all my work done.\n\ni am writing this a bit late as due to emergency at my home i was unable to catch up with the course ."
+  },
+  {
+    "title": "Lost data in laptop while working on Git bash",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/lost-data-in-laptop-while-working-on-git-bash/175382",
+    "content": "while solving the 18th question\nDownload q-list-files-attributes.zip and extract it. Use ls with options to list all files in the folder along with their date and file size.\n\nWhat’s the total size of all files at least 16 bytes large and modified on or after Fri, 18 Jul, 1997, 4:43 am IST?\ni even cant recall that what exactly code i wrote in git bash due to which this happened as i was trying many times …\nbut i think i did some mistake with directory selection again i am not very sure as simultaneously i was also working on powershell and colab…\nmy data in downloads desktop documents is completely lost …its completely blank\nplz if anyone have any idea to retrive my data please do support…i was having many important documents there.. ."
+  },
+  {
+    "title": "Https://exam.sanand.workers.dev/project-tds-virtual-ta-promptfoo.yaml is not opened",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/https-exam-sanand-workers-dev-project-tds-virtual-ta-promptfoo-yaml-is-not-opened/177666",
+    "content": "The URL https://exam.sanand.workers.dev/project-tds-virtual-ta-promptfoo.yaml is currently not accessible.\""
+  },
+  {
+    "title": "GA3 - Large Language Models - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga3-large-language-models-discussion-thread-tds-may-2025/175592",
+    "content": "Please post any questions related to Graded Assignment 3 - Development Tools.\n\nPlease use markdown code formatting (fenced code blocks beginning with ```) when sharing code (rather than screenshots). It’s easier for us to copy-paste and test.\n\nDeadline:  June 1, 2025\n\n@Jivraj @Saransh_Saini @HritikRoshan_HRM @21f3002441 @iamprasna @carlton"
+  },
+  {
+    "title": "Which subject to choose in jan term",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/which-subject-to-choose-in-jan-term/161071",
+    "content": "Hii all…i know this may not be the correct platform to ask this question.\nActually i have 3 diploma subjects to cover - MLP, JAVA, TDS. So which 2 subject should i choose for this term?"
+  },
+  {
+    "title": "GA2 - Deployment Tools - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga2-deployment-tools-discussion-thread-tds-may-2025/173525",
+    "content": "Please post any questions related to Graded Assignment 2 - Deployment Tools.\n\nPlease use markdown code formatting (fenced code blocks beginning with ```) when sharing code (rather than screenshots). It’s easier for us to copy-paste and test.\n\nDeadline:  May 27, 2025"
+  },
+  {
+    "title": "GA3 - Large Language Models - Discussion Thread [TDS Jan 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga3-large-language-models-discussion-thread-tds-jan-2025/163247",
+    "content": "Please post any questions related to Graded Assignment 3 - Large Language Models.\n\nImportant Instruction\n\nPlease use markdown code formatting (fenced code blocks) when sharing code in Discourse posts. This makes the code much easier to read and differentiate from non-code text. It also makes it easier for people to copy code snippets and run it themselves. See below code for example\n\nping exam.sanand.workers.dev\n\nPinging exam.sanand.workers.dev [104.21.31.149] with 32 bytes of data:\nReply from 104.21.31.149: bytes=32 time=9ms TTL=58\nReply from 104.21.31.149: bytes=32 time=8ms TTL=58\nReply from 104.21.31.149: bytes=32 time=8ms TTL=58\nReply from 104.21.31.149: bytes=32 time=9ms TTL=58\n\nPing statistics for 104.21.31.149:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 8ms, Maximum = 9ms, Average = 8ms\n\n\nVisit this link for more details: Extended Syntax | Markdown Guide.\n\nA friendly suggestion: kindly go through \nDiscourse Docs\n! \n\nDeadline:  Sunday, February 2, 2025 11:59 PM\n\n@carlton @Jivraj @Saransh_Saini"
+  },
+  {
+    "title": "Error for Vector Databases (1 mark)",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/error-for-vector-databases-1-mark/176823",
+    "content": "Hi ,\n\nI am getting the following error \"{‘error’: {‘message’: ‘You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.’, ‘type’: ‘insufficient_quota’, ‘param’: None, ‘code’: ‘insufficient_quota’}}\n\nPlease help.\nThanks\nRanadeep"
+  },
+  {
+    "title": "Project 1 deadline extension",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/project-1-deadline-extension/176644",
+    "content": "I am writing to kindly request an extension for the submission of Project 1 for the TDS course. The current deadline of June 14 is unfortunately clashing with several other academic and co-curricular commitments.\n\nWe have Paradox Fest scheduled just before the deadline, along with multiple assignment submissions across other courses. Due to this, I am finding it difficult to allocate sufficient time and focus towards completing the project with the quality it deserves.\n\nI genuinely want to put in my best effort for this project and would be extremely grateful if the deadline could be extended by a few days to allow for proper completion."
+  }
+]
