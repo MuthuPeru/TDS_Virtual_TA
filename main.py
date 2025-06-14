@@ -4,6 +4,7 @@ import json
 import faiss
 import numpy as np
 import requests
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load FAISS index and metadata
 index = faiss.read_index("tds_kb.index")
@@ -18,6 +19,19 @@ AI_PIPE_API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6IjI0ZjEwMDA0NDdAZHMuc3R1ZHku
 
 
 app = FastAPI()
+
+# Allow all origins (or restrict as needed)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/")
+def read_root():
+    return {"message": "TDS Virtual TA is running!"}
 
 class Query(BaseModel):
     question: str
