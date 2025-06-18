@@ -1,0 +1,10 @@
+Authlib==1.6.0
+beautifulsoup4==4.13.4
+faiss-cpu==1.11.0
+fastapi==0.115.12
+numpy==2.2.6
+playwright==1.52.0
+PyYAML==6.0.2
+regex==2024.11.6
+requests==2.32.3
+uvicorn==0.34.2
