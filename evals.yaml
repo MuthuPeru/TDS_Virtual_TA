@@ -1,0 +1,4 @@
+- name: simple test
+  prompt: "What is GA4 used for?"
+  vars:
+    question: "What is GA4 used for?"

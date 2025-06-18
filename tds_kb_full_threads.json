@@ -1,0 +1,1111 @@
+[
+  {
+    "title": "GA4 - Data Sourcing - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga4-data-sourcing-discussion-thread-tds-may-2025/178881/2",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Please post any questions related to Graded Assignment 4 - Data Sourcing.\n\nDeadline:  Sunday, June 22, 2025 11:59 PM\n\n@carlton @Jivraj @HritikRoshan_HRM"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Subject: Issue with Scraping BBC Weather API for Nur-Sultan JSON Forecast\n\nQuestion 4: Scraping BBC Weather API for Nur-Sultan Weather Forecast\n\nI’m trying to retrieve the JSON weather forecast description for Nur-Sultan using the BBC Weather API. However, I noticed that the BBC website lists the city as “Astana” instead of Nur-Sultan. When I attempt to use the JSON data for Astana, I encounter the following error:\n\nTypeError: Cannot read properties of undefined (reading ‘id’)\n\nHow should I proceed to correctly scrape the weather forecast for Nur-Sultan? how can I resolve the TypeError issue? Any guidance on handling city name"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hello,\n\n@Jivraj\n@carlton\n@HritikRoshan_HRM\n\nIn GA4 Q2 it is mentioned that result changes as per location. I am getting this error:\n\nAt [4].title: Values don't match. Expected: \"5. La Nuit des clowns\". Actual: \"5. Clown in a Cornfield\"\n\n\nBut when checked manually, the result I got was correct as per the filters applied. The difference seems to be due to region-specific variations in IMDb search results.\n\nCan you please clarify what should be done in such cases? Should we proceed with the region-specific result, or is there a standard way to align the output with the expected values?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "For the 8th question, I keep getting the same error: ‘Latest run does not include 24f2001830@ds.study.iitm.ac.in in the name’, even though my step name does contain my email id.\nCode for workflow is as below:\n\nname: Daily commits by 24f2001830@ds.study.iitm.ac.in\n\non:\n  schedule:\n    # Runs at 00:00 UTC every day\n    - cron: \"0 0 * * *\"\n  workflow_dispatch: # Allow manual triggers\n\njobs:\n  committing:\n    runs-on: ubuntu-latest\n    permissions:\n      contents: write\n\n    steps:\n      - name: Checkout repository\n        uses: actions/checkout@v4\n\n      - name: Commit as 24f2001830@ds.study.iitm.ac.in\n        run: |\n          echo \"Daily update: $(date)\" >> daily_log.txt\n          git config --local user.email \"github-actions[bot]@users.noreply.github.com\"\n          git config --local user.name \"github-actions[bot]\"\n          git add daily_log.txt\n          git commit -m \"Daily commit: $(date)\" || echo \"No changes to commit\"\n          git push || echo \"Nothing to push\""
+      }
+    ]
+  },
+  {
+    "title": "Project1 - Virtual TA - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/project1-virtual-ta-discussion-thread-tds-may-2025/176077",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Please post any questions related to Project 1\n\nPlease use markdown code formatting (fenced code blocks beginning with ```) when sharing code (rather than screenshots). It’s easier for us to copy-paste and test.\n\nDeadline:  June 14, 2025 11:59 PM\n\nDeadline:  Today 11:59 PM"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@s.anand @carlton\n\nSir i am done with my api endpoint for project 1 but i did one change in the given test file where we have to edit our api endpoint and test it as mentioned in the project description. I was testing my model but was getting the same response every time even though my model was giving the expected answer to those question when tested separately. I found that in the test file (promptfoo.yaml) the cache is marked as true and because of which whenever i try to run the test file it does not hit my api endpoint and take the old response from the cache. So i changed the cache to false and tried running that test file and got the results as shown below in the image.\n\nimage\n1861×912 105 KB\n\nIn this as you can see for the 2nd test case since i am using the openai model to give the final answer so it is using my context and saying that dashboard will show 11/10, but the expected answer should contain “110”. The problem i am facing is as you can see the url given in my response is same as expected which means my model is picking the right context to answer the question but since i am using openai to make my final answer using this context it is very unlikely that it will say that dashboard will show “110” because this doesn’t make sense. So can you please help me how should i tackle this ? As this is the only test case left.\n\nAnd also i have added one prompt field in the test file because i was getting warning regarding this missing field again and again. So is it okay ?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@HritikRoshan_HRM sir can you please help me with this."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Not able to access the tds project link.\n\n\nTDS_Project1\n898×509 16.7 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "tds.s-anand.net\nTools in Data Science"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Not this one the GitHub repository URL and API endpoint URL submission link not opening.\nSir my all links are working like I submitted by GA1 also but only my project submission link not working. Please solve the problem. How will I submit my project?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Have you completed your project ? I have some doubts."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "not yet but how will I gonna submit it. I can’t post this at end. My link should be working to submit my project before deadline."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Submission date is next month, maybe by then they will fix it. I am also not able access submission link."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sir, the question’s background specifies that we should use Discourse posts from January 1, 2025 through April 14, 2025. However, in first testcase we are asked to answer based on the following Discourse post—which dates outside that window:\nhttps://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939\n\nIs this an error in the question’s timeframe?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Interesting, that’s my post from Sep 24 Term. I am curious about the context and why did an 8 month old post come up in a Test."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I guess, this question is also covered in previous term, i.e., t1-2025"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Actually, in this term (May 25), we received our first project as TDS Virtual TA, where we are tasked with designing a chatbot API that acts as a virtual TA. For this project, your post has been provided as an example test case."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sorry, but I couldn’t find any related question. Could you please send me the link to the post, if you have it?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "It maybe in week-4 or 5 GA"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@Jivraj @carlton Sir, any updates on my issue?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sir, i have build an initial model for my project and when i test some question separately then i get somewhat expected answer like\n\nimage\n1136×435 11.3 KB\n\nthis is the response which i got from my model\n\n@carlton sir can you please help me in this"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "And the in the test file given in the project description this is the response for this question\n\nimage\n965×296 9.81 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "This is the response of the same question given in the promtfoo.yaml file which we have to use for the testing purpose by editing our api endpoint.\n\nBut the issue is, when i test this file by running that promtfoo.yaml file by editing my api endpoin then for this same question the test case fails.\n\nimage\n1179×191 12.9 KB\n\nalso the answer which it shows is not what i get when i run my model for this question as shown in the above image. Can you please help me with this, where i am going wrong ?"
+      }
+    ]
+  },
+  {
+    "title": "TDS | References | Guidelines",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/tds-references-guidelines/67216",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Course Portal\n\nPublic Course Portal Link\n\nInstructors\nPrasanna - @iamprasna\nCarlton - @carlton\nTags Usage\nPractice Question - Week-numPractice-question\nGraded Question - Week-numGraded-question\nOperational - operational\nExam - quiz\nProject - project-num\nTerm - termNum-YYYY\nCalendar\nCourse/subject calendar\nImportant Links\n\nGrading Document\n\nAnnouncement Group\n\nOfficial YouTube channel\n\nPurpose of ROE\n\nCourse Feedback\n\nHere’s students’ feedback:\n\nIt used to be an easy course until 2024. # # #\nNow it’s hard and covers more. Take it in your last semester if possible. # # #\nPlan extra time. It takes more time than typical 3-credit courses. # # #\nLLMs grade you – unpredictably. # #\nThe ROE is hard. #"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "title": "About the Tools in Data Science category",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/about-the-tools-in-data-science-category/23335",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "This category is created to address subject-specific queries related to Tools in Data Science\n\n- Why should people use this category? What is it for?\n\n\nThe larger goal of the Discourse forum is to act as a Knowledge base for the course. You can make this more productive by\n\nElaborating your question sufficiently and supporting it with steps that you have already tried at your end before posting this question\n\nSharing additional content or explanations related to the topic being discussed\n\n-  Are there any rules for posting in this category?\n\n\nBefore you create a new post, review the existing threads to see if there are already highly similar or identical postings. Discourse will suggest similar posts once you start typing titles\n\nTag the post appropriately so that it gets indexed correctly in our Knowledge Base. For instance, if your query is on an Activity Question in Week 1 then use the tags #activity-question, #week-1\n\nProvide a meaningful title to your post that contains the topic/details of your query so that it can be searched by others easily. For instance: Do not use the titles like “AQ1.1 Q3” which just gives question number alone. Instead use a more meaningful title like - “Need help in calculating the N^{th} prime number”\n\nType in your question and explanations rather than pasting images or screenshots.\n\n- What is NOT Permitted in this category?\n\n\nBeing argumentative or sarcastic\n\nUse of abusive/strong language\n\nPosting support/logistics related query\n\nUnnecessarily tagging Faculty/Instructors in posts\n\nPosting Solutions or discussing solutions to graded assignments\n\n- Who will be moderating the content in this forum?\n\n\nThe foum will be moderated by Course Instructors. They will have the authority to decide whether a post violates forum rules/guidelines. You can flag/report any such violations that you observe by clicking on  icon on the post. Please do mention the reason why you are flagging the topic.\n\n  - What are the disciplinary actions if some one violates the rules and guidelines of the forum? \n\n\nThe flagged posts that violates forum rules/guidelines will be hidden. Repeated violation of the rules can result in the offender being removal from the forum."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Can some course instructor talk more about the Discover the problem statement ?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "From the graded assignment we can’t understand what is right way to think unless we make trial and error. can we have some practice assignment to understand our thinking process is properly aligned or not. With just GA it would be difficult to assess."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Apart from what @CKPIITM observed about this course, here’s my first impression of this course…Granted, it has been only a week, but I think I must go ahead anyway…\n\nThe week-1 clearly shows a lack of planning, from the program as well as the specific course perspective. It starts off with an example that completely caught me off-guard. The first video discussed an example that left me wondering why is the instructor even discussing all of that, at this point. What’s the context and the motivation? Moreover, every slide is filled to the brim with text. Can’t decide whether to read it or listen to the speaker. Neither does give me much understanding anyway. It was filled with terminology that I’m yet to pick up. The speaker didn’t apparently know much about who the audience is, and what are they aware of, and what they aren’t…In short, it failed to implement any of the very matter it speaks of - Understanding the problem.\n\nSummary. I feel the course is offered too early. Rather, I took it a little too early.\nDefinitely, I can’t relate to most things the speaker is talking about. At least, I don’t see how and where the ideas will gel with our program. I’m sure it does, but now, I don’t know how.\n\nSorry, I’d never been as critical about anything as this one. I just had to. I’m willing to hear different opinions.\n\nI’m awaiting the announcement from IIT for the course drop."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I am totally clue less about the expectation of instructor from the participants of this course. And the question of graded assignment was something, I found myself out of context. I know I can pass any course but I don’t just wanna pass without any concrete learning. The real problem this time is not TIME.\n\nHopefully courses instructor will guide us through this conundrum."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I feel like we need an introduction video of some kind for this. Or it should have been suggested only to those who have completed all the ML courses. From the offset, there are people who don’t know what modelling is, the different kinds of models etc. but there is no explanation for all this. Granted, it was mentioned in the orientation that it would only be tools with no explanation.\n\nBut I am hopeful that this will get better in the later weeks as this is the only “comprehension” type of week (reminiscent of the english courses lol). The other weeks will all involve practical approach and coding. As long as adequate time is spent on introducing each new thing, I think it should be okay."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "As of now, I’m set on my mind to drop the course, unless something hopeful turns up next week. Will continue after all other ML courses are done…"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Some sort of introduction would have been better instead of just diving into the topic. Nevertheless, I hope we get practice questions/assignment to comprehend the concepts.\nIn the meantime if anyone gets some sort of resources to practice elsewhere, do share."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Adding to the discussion here, I’d also have to say it’s quite the same feeling for me. I got lost while going through the videos. At first, I thought it’s some issue with me, because of which, the video is making less meaning. Seems like, many have the same issues. As told by many here, I would also emphasize the need for more practice questions."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Participants of this course should express their experience so that a more meaningful content can be created and provided to us as supplementary. From lec video it is clear that the recording were made around july so they had around half an year time to work on it.\n\nThe other problem is, there is no visible resource to get our hands on experience."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I also feel the same. but I think with further weeks the course will become more interesting."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "As my peers said i also feels the same way but i don’t have thought of dropping course rather i wanted some more content to add from IITM side to make the students more comfortable in this journey."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "well, my choice of dropping might be wrong…but, guided by the following factors.\n\nThe recording was perhaps done much earlier as @CKPIITM pointed out in his reply, and so chances are most of it would’ve been already recorded. So, lesser chances to re-record them.\n\nThere are no live sessions planned yet for this course… the absence of enough sessions (especially given that it’s a 2-credit course) will worsen the situation.\n\nFinally, I feel I might be able to better appreciate the technicalities and jargon if I finish all other ML courses before taking this up."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Imagine if your reason doesn’t get resolved even after all ML courses are over then in that case you will underutilize your time. So I would suggest don’t think of dropping, it is just a course and we just need to pass it and leverage this knowledge to search for better resources and learning material.\n@Anand"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "CKPIITM:\n\nI know I can pass any course but I don’t just wanna pass without any concrete learning.\n\nwasn’t it you who wrote this earlier"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "But this will not lead me to dropping either. I always find ways to learn.  I start with expectation and then start my own search for knowledge."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I certainly differ from the point of view of the conversation going on in this thread.\nIn my opinion, I am thinking this first week of content as to understand how the problems or objective come from a company which needs these models to implemented. It is more of a professional view rather than a student view. We need to first understand the problem and then start the solution rather than just jumping on to modelling each question."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I also found 1st week content engaging and practical. Maybe I will get few questions wrong,but I feel the concept of discovering the problem was well introduced."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I too find content of week 1 engaging and practical. I agree with @anand095 and @akruti."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Interesting! Just this morning, during my morning walk I was thinking how each of us is different in our outlook, our potential, how we realize it, how we’re challenged…and the recent posts show that we indeed are different! It’s important that none of us stay put on what works for us and what we think is right, but be willing to see the other point of view too…\n\nI think I’m starting to understand the other points of view…well I’m trying to"
+      }
+    ]
+  },
+  {
+    "title": "Help required in Project 1 - scrapping Discourse data",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/help-required-in-project-1-scrapping-discourse-data/179153",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hello,\nI’m new to coding and still learning. I’m trying to scrape data from a Discourse forum and have identified the relevant API endpoint. However, I’m having trouble with authentication—I keep receiving a 403 error stating that the user is not logged in or doesn’t have permission to perform the action.\n\nI’ve tried using the most recent cookies from my browser, but I still get the same error. Can someone help me figure out what I’m doing wrong?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Honestly, you must be unintentionally making some sort of a mistake. I will give you a function definition that should work.\n\n\nimport requests\n\ndef create_session():\n\n    domain = \"discourse.onlinedegree.iitm.ac.in\"\n\n    session = requests.Session()\n\n    cookies = dict(\n\n        _t = \"_______________\",\n\n        _forum_session = \"_______________\"\n\n    )\n\n    for name, value in cookies.items():\n\n        session.cookies.set(name, value, domain=domain)\n\n    return session\n\n\nUse this session object using session.get(url, headers=headers).\n\nYou must create a session to mimic a real browser. Good luck!"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "did u get an api key for discourse to scrape the data can u help me with that @23f1000917"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "i am currently running it in local host 8000 other functionalities are working this is the problem data scraping"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Okay, I will explain it to you.\n\nUpon visiting discourse and signing in with your account, you get ‘cookies’ containing information that can be used to authorize you. These cookies are sent with each subsequent request you make to discourse, if the website does not recognize these cookies, they simply reject your request with a status code of 403.\n\nIf you want to scrape the posts, you need to get these cookies. So, where are these cookies stored? Well, just sign into discourse with your IITM account (in Chrome). Then, visit the following URL:\nhttps://discourse.onlinedegree.iitm.ac.in/session/current.json\n\nOnce the page has opened and you can see JSON data, do the following:\nright click > inspect > application > cookies > https://discourse.onlinedegree.iitm.ac.in/.\n\nNow, you will see a bunch of cookies, which are similar to a python dictionary containing key-value pairs. You only care about two such keys, one is _t and the other one is _forum_session.\n\nSave the value of these cookie keys in a python file like my_cookies.py:\n\n# my_cookies.py \n_t = \"your _t cookie\"\n_forum_session = \"your _forum_session cookie\"\n\n\nNow, these can be imported into other files using:\nfrom my_cookies import _t, _forum_session\n\nauth_cookie: dict = { '_t' : _t , '_forum_session': _forum_session }\n\n\n\nNote that these cookies keep changing, when you make new requests you get different values that replace the current values of your session. You can think of the session as a user.\n\nNow, look at my previous reply:\nhttps://discourse.onlinedegree.iitm.ac.in/t/help-required-in-project-1-scrapping-discourse-data/179153/2?u=23f1000917\n\nThe requests module is used to send requests to websites in python. You need to install it using pip install requests. You create a session object and add your cookies in it. This automatically handles the changing and replacement of cookie values when you make requests.\n\nSearch for a tutorial on the requests module to understand how to make requests using it. Just know that you can do the something like this:\n\nimport requests \n\nURL = \"https://example.com/latest_threads.json\"\nsession = requests.Session()\nresponse = session.get(URL)\nif response.status_code=200:\n    data = response.json() # get json data \n\n\nLastly, watch the live sessions conducted by IITM on 10th June and next few days. You can find them in your google calendar."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@23f1000917 thanks bro will try this out"
+      }
+    ]
+  },
+  {
+    "title": "A humble request to the TDS Course Team",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/a-humble-request-to-the-tds-course-team/179034",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@carlton and @Jivraj\n\nRespected Sir\n\nIt was my first time doing web scraping and other tasks required for this project. After watching the live sessions, I realized that my approach was wrong. The live sessions are really good but, they are being conducted too close to the deadline (started on 10th June). In the sessions, it was said that this project could be completed in a day, but I don’t feel that this is the case for me (not even close), though that might just be my own inefficiency.\n\nAside from that, the method of using the Gemini model demonstrated in the sessions only allowed me to generate embeddings for the first 100 chunks (max per day), there are way more than that in my workflow. I have to spend time finding other alternatives to create embeddings before I make the final submission with the openAI api. So, I humbly request, if it is possible, please consider extending the deadline by a few days. There is not enough time to absorb what was taught in the live sessions and implement it as complete beginner.\n\nThank you."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "23f1000917:\n\nAside from that, the method of using the Gemini model demonstrated in the sessions only allowed me to generate embeddings for the first 100 chunks (max per day), there are way more than that in my workflow. I have to spend time finding other alternatives to create embeddings before I make the final submission with the openAI api. So, I humbly request, if it is possible, please consider extending the deadline by a few days. There is not enough time to absorb what was taught in the live sessions and implement it as complete beginner.\n\nit will be helpful if deadline extended by 2-3 days"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes sir please extend the deadline"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "please extend the deadline"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "please extend the deadline"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Already extended till 18th.\n\nOn another topic\n\nPlease post any questions related to Project 1\n\nPlease use markdown code formatting (fenced code blocks beginning with ```) when sharing code (rather than screenshots). It’s easier for us to copy-paste and test.\n\nDeadline:  June 14, 2025 11:59 PM\n\nDeadline:  Today 11:59 PM"
+      }
+    ]
+  },
+  {
+    "title": "Project 1 submission deadline",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/project-1-submission-deadline/179145",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@carlton Sir could you please extend the deadline for the submission of the project-1 by one more day."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sir, Please check possibility of few days extension as some of the tasks requires throttling and unable to get it done on time."
+      }
+    ]
+  },
+  {
+    "title": "Having issue while submitting the project",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/having-issue-while-submitting-the-project/179139",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hello, i decided to deploy my virtual assistant project for TDS May 2025 term on Render.\nthe url is accepting GET requests for “/” endpoint and POST requests for “/api/” endpoint as instructed by Sirs. but it seems that the form where i’m supposed to provide github repo link and deployment public url, is sending an OPTIONS request to my Render deployed application, which it is dismissing by saying method not allowed. what to do??\n\nEDIT: enabling CORS let me send an OPTIONS request from the submission form so i was able to submit.\n\nlater i sent promptfoo as well as regular curls to Render url and they worked too. Although once it shut down, it just isn’t starting back up again; sending curls now gives me some really long html and doesn’t even send any api calls to the render url. what to do?\n\n@carlton @Jivraj"
+      }
+    ]
+  },
+  {
+    "title": "Hello I need some help",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/hello-i-need-some-help/179142",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I want some help in tds project"
+      }
+    ]
+  },
+  {
+    "title": "Drop Course Window",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/drop-course-window/179104",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@carlton sir I’m unable to continue with the course, is it possible to drop course somehow, the option is not visible anywhere. Please guide.\nRegards\nNitin Dixit\n23f2005404"
+      }
+    ]
+  },
+  {
+    "title": "TDS Project 1 2025",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/tds-project-1-2025/179103",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I’ve watched the YouTube sessions for Project 1, but I’m feeling quite confused. I’ve managed to scrape data from Discourse, and the content is now saved in multiple files. I’ve converted these files into .md (Markdown) format, but I’m having trouble handling the images — I’m not able to extract or display them properly. Can anyone help?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Can you please clarify how you scraped the data . I am not able to do it. Please Help me."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "You can watch project sessions of tds in youtube playlist. They have mentioned and shown example of how to scrape the data."
+      }
+    ]
+  },
+  {
+    "title": "GA5 Question 8 Clarification",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "image\n756×295 19.5 KB\n\nThe question asks to use gpt-3.5-turbo-0125 model but the ai-proxy provided by Anand sir only supports gpt-4o-mini. So should we just use gpt-4o-mini or use the OpenAI API for gpt3.5 turbo?\n@carlton"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I tried gpt-3.5-turbo-0125 with python’s tiktoken library , I got a different value for prompt token compared gpt-4o-mini from the proxy api."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "My understanding is that you just have to use a tokenizer, similar to what Prof. Anand used, to get the number of tokens and multiply that by the given rate."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Use the model that’s mentioned in the question."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "The answer should be 0.00165 right."
+      }
+    ]
+  },
+  {
+    "title": "Hoe to get disclosure api",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/hoe-to-get-disclosure-api/179010",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "can anyone help with this problem"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "discourse api is only for admins i guess but we need it for the project @pds_staff @andrew please help sir"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Please watch Project1 sessions present on youtube, First session for project 1 covers how to access discourse api’s and get thread data."
+      }
+    ]
+  },
+  {
+    "title": "Doubt regarding Promptfoo in TDS Project 1",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/doubt-regarding-promptfoo-in-tds-project-1/179012",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "My promptfoo is showing this output when I run it, but while using curl, i get appropriate response. What should I do?\n\n\nScreenshot 2025-06-12 at 11.38.44 PM\n3024×434 172 KB\n\nScreenshot 2025-06-12 at 11.37.17 PM\n1272×1490 151 KB"
+      }
+    ]
+  },
+  {
+    "title": "Getting an api key error upon running npx -y promptfoo eval –config project-tds-virtual-ta-promptfoo.yaml",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/getting-an-api-key-error-upon-running-npx-y-promptfoo-eval-config-project-tds-virtual-ta-promptfoo-yaml/178878",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "[FAIL] API error: 401 Unauthorized {“error”:{“message”:\"Inc… API key provided: sk-proj-*************** You can find your API key at https://platform.openai.…"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@HritikRoshan_HRM sir @carlton sir could you pls help"
+      }
+    ]
+  },
+  {
+    "title": "Submissions of Weekly Graded Assignment of TDS",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/submissions-of-weekly-graded-assignment-of-tds/178618/2",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@Jivraj @21f3002441\nI have submitted the weekly graded assignments for Tools in Data science, from the correct google account and yet it has been showing not submitted from the past three weeks. Could you help me with this?\n\ncomplaint1\n900×874 122 KB\n, this is shown and yet it is showing not submitted in the grades section\n\nsimilar problem for all three weeks. Please let me know"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi @24f1002463\n\nWhat do you see on course page ? Nptel Seekh"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Thank you. There seems to be a glitch, because now, marks are visible on the course page but when I check grades individually for the course, it still says not submitted."
+      }
+    ]
+  },
+  {
+    "title": "Api Key Error",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/api-key-error/178898",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "(venv) C:\\Users\\User\\Desktop\\TDS Folder>python scrape/embed_documents.py\n Embedding documents: 0it [00:00, ?it/s] Error getting embedding: Error code: 401 - {‘error’: {‘message’: ‘Your authentication token is\nnot from a valid issuer.’, ‘type’: ‘invalid_request_error’, ‘param’: None, ‘code’: ‘invalid_issuer’}}\n Embedding documents: 1it [00:00, 1.26it/s] Error getting embedding: Error code: 401 - {‘error’: {‘message’: ‘Your authentication token\nis not from a valid issuer.’, ‘type’: ‘invalid_request_error’, ‘param’: None, ‘code’: ‘invalid_issuer’}}\n Embedding documents: 2it [00:01, 1.95it/s] Error getting embedding: Error code: 401 - {‘error’: {‘message’: ‘Your authentication token\nis not from a valid issuer.’, ‘type’: ‘invalid_request_error’, ‘param’: None, ‘code’: ‘invalid_issuer’}}\n Embedding documents: 3it [00:01, 2.08it/s]"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "description: \"TDS Virtual TA Project Sample (but not the actual evaluation) Questions\"\n\nproviders:\n  - id: https\n    config:\n      url: YOUR_API_ENDPOINT # Replace this with your API endpoint\n      method: POST\n      headers:\n        Content-Type: application/json\n      body: |\n        {\n          \"question\": \"{{ question }}\"{% if image %},\n          \"image\": \"{{ image }}\"{% endif %}\n        }\n      transformResponse: json\n\n# Ensure JSON schema\ndefaultTest:\n  options:\n    provider:\n      id: https\n      config:\n        url: https://aiproxy.sanand.workers.dev/openai/v1/chat/completions\n        method: POST\n        headers:\n          Content-Type: application/json\n          Authorization: Bearer YOUR_API_KEY  # Replace with your token\n        body: |\n          {\n            \"model\": \"gpt-4o-mini\",\n            \"messages\": [\n              {\"role\": \"system\", \"content\": \"You are an evaluator that checks if an output meets specific criteria. Analyze the output based on the given rubric and respond with a JSON object containing {\\\"reason\\\": \\\"your analysis\\\", \\\"score\\\": number between 0.0 and 1.0, \\\"pass\\\": true/false}.\"},\n              {\"role\": \"user\", \"content\": \"Output to evaluate: {{ output }}\\n\\nRubric: {{ rubric }}\"}\n            ],\n            \"temperature\": 0\n          }\n        transformResponse: json\n\n  assert:\n    - type: is-json\n      value:\n        type: object\n        required: [answer, links]\n        properties:\n          answer: { type: string }\n          links:\n            type: array\n            items:\n              type: object\n              required: [url, text]\n              properties:\n                url: { type: string }\n                text: { type: string }\n\ntests:\n  - vars:\n      question: The question asks to use gpt-3.5-turbo-0125 model but the ai-proxy provided by Anand sir only supports gpt-4o-mini. So should we just use gpt-4o-mini or use the OpenAI API for gpt3.5 turbo?\n      image: file://project-tds-virtual-ta-q1.webp\n      link: https://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939\n    assert:\n      - type: llm-rubric\n        transform: output.answer\n        value: Clarifies use of gpt-3.5-turbo-0125 not gpt-4o-mini\n      - type: contains\n        transform: JSON.stringify(output.links)\n        value: https://discourse.onlinedegree.iitm.ac.in/t/ga5-question-8-clarification/155939\n\n  - vars:\n      question: If a student scores 10/10 on GA4 as well as a bonus, how would it appear on the dashboard?\n      link: https://discourse.onlinedegree.iitm.ac.in/t/ga4-data-sourcing-discussion-thread-tds-jan-2025/165959/388\n    assert:\n      - type: llm-rubric\n        transform: output.answer\n        value: Mentions the dashboard showing \"110\"\n      - type: contains\n        transform: JSON.stringify(output.links)\n        value: https://discourse.onlinedegree.iitm.ac.in/t/ga4-data-sourcing-discussion-thread-tds-jan-2025/165959\n  - vars:\n      question: I know Docker but have not used Podman before. Should I use Docker for this course?\n    assert:\n      - type: llm-rubric\n        transform: output.answer\n        value: Recommends Podman for the course\n      - type: llm-rubric\n        transform: output.answer\n        value: Mentions that Docker is acceptable\n      - type: contains\n        transform: JSON.stringify(output.links)\n        value: https://tds.s-anand.net/#/docker\n  - vars:\n      question: When is the TDS Sep 2025 end-term exam?\n    assert:\n      - type: llm-rubric\n        transform: output.answer\n        value: Says it doesn't know (since this information is not available yet)\n\nwriteLatestResults: true\n\ncommandLineOptions:\n  cache: true\n\n\nMake sure to replace “YOUR_API_KEY” with the API key that you have and “YOUR_API_ENDPOINT” with the URL and port you are running your API.\n\nNo need to keep the url and api_key in quotes, just paste them as it is."
+      }
+    ]
+  },
+  {
+    "title": "Guide for tds project 1",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/guide-for-tds-project-1/178649",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Where can I get a reference or some material that may Guide me to complete the project."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "github.com\nGitHub - 23f3004008/TDS-Project1-Data\n\nContribute to 23f3004008/TDS-Project1-Data development by creating an account on GitHub.\n\nThis is a good starting point for web scraping"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "title": "How to find API key for discourse page",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/how-to-find-api-key-for-discourse-page/178166",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I want to access the API key of dicourse page for tds project 1. kindly suggest some ways to access it."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "You need to access it somewhat like:\n\nCOOKIES = {\n    \"_t\": \" YOUR_COOKIE\"\n}\n\nBASE_URL = \"https://discourse.onlinedegree.iitm.ac.in/c/courses/tds-kb/34\"\nHEADERS = {\n    \"User-Agent\": \"Mozilla/5.0\",\n}\n\nsession = requests.Session()\nsession.headers.update(HEADERS)\nsession.cookies.update(COOKIES)\n\n\nto get your _t, go to inspect->application->cookies->_t cookie there\n\ncopy paste whatever i wrote and chatgpt it, it will elaborate for you, if required"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Where can I get a reference or some material that may Guide me to complete the project"
+      }
+    ]
+  },
+  {
+    "title": "TDS project 1,I face ambiguati to make this project,how can I start?",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/tds-project-1-i-face-ambiguati-to-make-this-project-how-can-i-start/154294",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "pleas help me for make this project1,in tooi in datascience"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi Mihir,\n\nIf you watch the TA sessions (on the TDS YouTube channel) where APIs were discussed, and read the Github API documentation , you will be able to solve this project.\n\nhttps://docs.github.com/en/rest?apiVersion=2022-11-28\n\nKind regards"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "May you please provide the link for the TA session"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@22f3000658 This thread has nothing to do with the current project. Our projects keep changing every term. Please post on the official thread for Project."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "title": "Marks of GA1",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/marks-of-ga1/177878",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "even till not i havent got any email regarding my marks in ga 1\ni submitted that on time also with all my work done.\n\ni am writing this a bit late as due to emergency at my home i was unable to catch up with the course ."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi Kritika,\n\nI have just checked your submission. I apologise that your score has not reflected on your dashboard. I was not given an updated enrollment list of students on the course, so although we have your submission scores it was not pushed to the dashboard because as far as I was aware you were not on TDS enrollment list that was provided to us by operations @jkmadathil . We will make the corrections and inform operations. It will take a few days to get sorted out.\n\nThanks for letting us know and for your patience.\nKind regards\n\nTDS Team"
+      }
+    ]
+  },
+  {
+    "title": "Lost data in laptop while working on Git bash",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/lost-data-in-laptop-while-working-on-git-bash/175382",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "while solving the 18th question\nDownload q-list-files-attributes.zip and extract it. Use ls with options to list all files in the folder along with their date and file size.\n\nWhat’s the total size of all files at least 16 bytes large and modified on or after Fri, 18 Jul, 1997, 4:43 am IST?\ni even cant recall that what exactly code i wrote in git bash due to which this happened as i was trying many times …\nbut i think i did some mistake with directory selection again i am not very sure as simultaneously i was also working on powershell and colab…\nmy data in downloads desktop documents is completely lost …its completely blank\nplz if anyone have any idea to retrive my data please do support…i was having many important documents there.. ."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "It may have merged with the extracted folder. Check if any new folder was created in the process."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "this is very good reason to work in wsl instead of directly on your local machine. git bash I presume is a direct install on windows (a bash terminal for windows). bash is a very powerful tool and has to be used with care. unless you really know what you are doing, it is far better to work in isolated VMs like wsl or other similar setups or containers. It may be recoverable, but for future make sure you have regular backups of your work in the cloud like on OneDrive or Google Drive. Then recovery from fatal erasures is trivial.\n\nAs far as how to recover the files totally depends on what happened and if you have any recovery systems in place. It is hard to give generic advice without knowing your system. If there is Roll back or File History in your system it is quite possible to recover the files. Or if your work is all within OneDrive for example.\n\nKind regards"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "kritika0806:\n\ni even cant recall that what exactly code i wrote in git bash due to which this happened\n\nYou should take a look at your bash history. That might offer some clues as to what happened.\n\nhistory | tail should give you the last 10 commands you ran."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "many folders were created but none of them has my laptop data.."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "command not found\nit got erased…"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "to the best of my abilities till now i am unable to backup it …\nbut this taught me great things."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Try TestDisk.\n\nTestDisk is a tool for recovering files which have been deleted.\n\nInstall testdisk\nEnter testisk into the command line, and the utility will start.\nSelect your partition to search in.\nSelect quick search or deeper search.\ntestdisk will output which files have been recovered and then you can decide to recover or not.\n\n\nA tutorial on testdisk at the following link, How to Install TestDisk on Linux and Recover Deleted Files | DigitalOcean\n\nAlso available on Windows, don’t know the steps though."
+      }
+    ]
+  },
+  {
+    "title": "Https://exam.sanand.workers.dev/project-tds-virtual-ta-promptfoo.yaml is not opened",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/https-exam-sanand-workers-dev-project-tds-virtual-ta-promptfoo-yaml-is-not-opened/177666",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "The URL https://exam.sanand.workers.dev/project-tds-virtual-ta-promptfoo.yaml is currently not accessible.\""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "You wrote the same post twice in two different threads. Not only is that bad etiquette, there was also an answer give to your question in the main project thread immediately after your question.\n\nIt is found here\n\n Project1 - Virtual TA - Discussion Thread [TDS May 2025] \nTools in Data Science\nThe issue still seems to be there @carlton about the missing promptfoo file. Its still accessible from https://tds.s-anand.net/project-tds-virtual-ta-promptfoo.yaml , but on the exam submission portal its linked to its relative path file, which does not exist. You can get the file from https://tds.s-anand.net/project-tds-virtual-ta-promptfoo.yaml\n\nDo NOT double post. All posts are read by multiple people including the prof.\n\nRegards"
+      }
+    ]
+  },
+  {
+    "title": "GA3 - Large Language Models - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga3-large-language-models-discussion-thread-tds-may-2025/175592",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Please post any questions related to Graded Assignment 3 - Development Tools.\n\nPlease use markdown code formatting (fenced code blocks beginning with ```) when sharing code (rather than screenshots). It’s easier for us to copy-paste and test.\n\nDeadline:  June 1, 2025\n\n@Jivraj @Saransh_Saini @HritikRoshan_HRM @21f3002441 @iamprasna @carlton"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sir in the 9th question when entering this command\n\nllm embed-multi typescript-book --model 3-small --store --format nl chunks.json\n\n\nI’m facing this problem\n\n\n2025-05-21_17h45_37\n353×185 25.6 KB\n\n@23f3000511"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@carlton @Jivraj is there anything wrong with Q9 of GA-3 ? I am trying for last two days but getting this as the error.\n\n\nScreenshot 2025-05-22 at 4.27.59 PM\n2938×1300 324 KB\n\ncould u please help me out."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi Asit,\n\nI have solved all questions of GA3 without any issues, there should not be any issues."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "GA3 submission date preponed from 01 Jun to 25 May 2025 since there’s a break the week after\n\nWhich One is the real dead Line - 01 June Or 25 May 2025"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "The Above Comment is written on Tools in Data Science Which was last updated on 5th of may, but it is still up there"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "deadline for GA3 is 1st june"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "You would need to install llm cli for using it.\n\nFind documentation below simonw/llm: Access large language models from the command-line"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I want to confirm what is deadline of week 3 in TDS because on portal, Graded assignment of week 3 is not updated but by using URL of GA2 and by replacing 2 with 3 in URL, I can get week 3 GAs, but in docs, provided by TDS portal through Email have deadline on 25 June for GA3 but with the URL, We are getting 25 May as deadline. So please clarify this what is deadline for GA 3\n\n\nScreenshot 2025-05-19 223148\n809×321 15.6 KB\n\nScreenshot 2025-05-19 223532\n1617×1026 108 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "sir i am facing issue in every assignment where api key is needed i have exceeded my quota so it is not accepting api key in any of my account even i use my friend’s api key it shows that you have exceed your quota. Please give me solution for this last time i missed my assignment due to this problem.\n\n\nimage\n612×288 10.4 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "please help me @carlton @Jivraj"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "OpenAi free trial credits have been discontinued?\n\nYes, the free credits have been discontinued earlier this year. OpenAI now for most users operates under pre-paid billing. In order to use the API you need to fund your account with a minimum balance of USD 5. Let us know if you have any further questions.\n\ncheck Is OpenAi free trial credits have been discontinued? - API - OpenAI Developer Community\n\nplease allow us to use different model like of deepseek or somthing else otherwise it is not possible for us to do the assignment even after using OPEN_API_KEY of any account it shows “your quota has been exceeded”"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "This is most likely because you are not using the documented api endpoints. It was explained in earlier live sessions that we provide you with a key with sufficient credit to complete your assignments. But the mechanism we employ is to use a proxy. Please carefully follow the instructions in the session or on the aipipe documentation that is available on module 3 first page."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sir which API Key to use for question 9 for running this llm\n\nimage\n1271×770 63.8 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Admin@DESKTOP-JSC3TUA MINGW64 /f/IITM/tools_in_data_science/assignment3/Q-9/app\n$ uv run addnotes.py\nCreate collection response: 400 {“message”: “OpenAI API error: Your authentication token is not from a valid issuer.”}\nFailed to create collection. Exiting.\n\ni am getting this even after using AIPIPE_TOKEN every time"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Even if you use the Ai pipe token, if you do not use the right endpoints you will still get that error. Because open ai does not recognise aipipe tokens as legitimate."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "i keep getting this error for Q8\n\n\nScreenshot 2025-05-25 165409\n745×529 28.1 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "so sir what’s the solution?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "what is the final date for submitting GA3 .. test showing 1st June.. kindly confirm\n\n\nimage\n2897×1241 283 KB"
+      }
+    ]
+  },
+  {
+    "title": "Which subject to choose in jan term",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/which-subject-to-choose-in-jan-term/161071",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hii all…i know this may not be the correct platform to ask this question.\nActually i have 3 diploma subjects to cover - MLP, JAVA, TDS. So which 2 subject should i choose for this term?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Don’t take TDS, this subject should be taken in the end else you might have some problem"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "TDS at the end best. Gives you the best chance of doing well in it.\n\nKind regards"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes you should do tds after mlp only it really help you alot trust me"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "You should focus on TDS at latter stage of your diploma"
+      }
+    ]
+  },
+  {
+    "title": "GA2 - Deployment Tools - Discussion Thread [TDS May 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga2-deployment-tools-discussion-thread-tds-may-2025/173525",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Please post any questions related to Graded Assignment 2 - Deployment Tools.\n\nPlease use markdown code formatting (fenced code blocks beginning with ```) when sharing code (rather than screenshots). It’s easier for us to copy-paste and test.\n\nDeadline:  May 27, 2025"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Having a problem in Technical Assessment.\n\n\"Paste your ngrok forwarding URL here:\nhttps://abcd1234.ngrok-free.app\nSyntaxError: Unexpected token ‘<’, \"<!DOCTYPE “… is not valid JSON”\n\nbut when I’m doing “curl -i https://abcd1234.ngrok-free.app/api/tags”\nthe output is “{“models”:}”. So, what’s the actual issue? @Jivraj @carlton"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sir, since free ngrok links show a warning page on the initial request, the same page appears in the GET request for the TDS 2025 May GA2 - Local Ollama Endpoint. Could you please include a ngrok-skip-browser-warning header in the evaluation request, or provide a way to bypass this issue?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Q2\nHi @Jivraj @carlton . When I try submitting the URL from my phone I get a correct answer whereas from my laptop I get this error. Is it an issue of caching in the browser?\n\n\nScreenshot from 2025-05-12 22-13-40\n1297×387 45.4 KB\n\n\ndab57387-ece3-454c-87c1-e3e6a7f66314\n933×1280 84.2 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi @23f2004759 Can you look under network tab what the response is?\nIt might be browser that’s causing issue."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes I tried using a different browser and it worked just fine. Sorry for the inconvenience @Jivraj Sir"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "VarunAgnihotri:\n\nngrok-skip-browser-warning\n\ndone that.\n\nKind regards."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Sir, since free ngrok links show a warning page on the initial request, the same page appears in the GET request for the TDS 2025 May GA2 - Local Ollama Endpoint. Could you please include a ngrok-skip-browser-warning header in the evaluation request, or provide a way to bypass this issue?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "So now can we do this ques? Were there some kind of issue on the website? @Jivraj"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi,\nFor the assignment 10. I was able to create the FastAPI application and run queries based on random classes from the dataset and with multiple classes in a single api call, All the responses are as expected, But when I check in the portal no matter what I do the check fails. I tested the queries being sent when I click the check button, I copied the url, test it in my local rest client and got the results which I think are correct. Below is the url and its output (truncated the response).\n\nsample input\n\n127.0.0.1:8000/api?class=12W&class=10O&class=5B&class=5J\n\n\noutput\n\n{\n  \"students\": [\n    {\n      \"studentId\": \"69\",\n      \"class\": \"12W\"\n    },\n    {\n      \"studentId\": \"320\",\n      \"class\": \"12W\"\n    },\n    {\n      \"studentId\": \"538\",\n      \"class\": \"10O\"\n    },\n    {\n      \"studentId\": \"598\",\n      \"class\": \"5J\"\n    },\n    {\n      \"studentId\": \"637\",\n      \"class\": \"10O\"\n    },\n    {\n      \"studentId\": \"657\",\n      \"class\": \"5B\"\n    },\n....\n  ]\n}\n\n\nI get the error\n\nError: At [0].studentId: Values don't match\n\n\nAssuming that the check is done in Ascending order then first element is the smallest and the first element in the csv file.\n\nPlease help me in identifying the issue or guide me in the right direction."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi,\n\nI still get an error\n\nTypeError: Failed to fetch\n\n\nthe same url is working in cli, and in browser too with the warning."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "in Q11, i am facing this issue while creating an organization, Your current account, [23f3003724@ds.study.iitm.ac.in], doesn’t have the permissions to perform this task. Log into the Cloud Console using either your Workspace or Cloud Identity super administrator account. You can also copy a link to this Users and Groups task and request that your super administrator complete this step.\n\nkindly help me with this.."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "in Q6, that one including vercel deployement, i performed the deployement, but the deployement shows deployement not found to me, what could be the possible reason if any of u dealt with a similar issue?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@Jivraj sir i am facing issues in the vercel question that is the 6th one my deployment is working fine infact i am getting the results as per the question but when i submit the link on the portal it says FAILED TO FETCH.\nbut when i paste the same link in my browser with and without parameters i get the desired result"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "You need to get the oauth credentials from your personal account to setup the OAuth. Then you can use the IITM Account when choosing the account in the actual application run."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "okay, well i am done with the issues i was facing, thank you, could u just tell me if we have some sort of limit for requesting in Q12??"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "in GA-2 yesterday night i solved 6 question and saved all of them last submission shows 6/10 . but today when i started solving remaining question and after saving again it showing 2.75/10 . some question like 9,11 which was based on local showing incorrect now. in yesterday session sir told whatever you do just save it it will persist as solving all 10 Questions in one go is not possible .\n\nsir, pls clearify , do i have to to solve all question in one go, as after doing shut down it all vanishes despite saving .\n\n\nimage\n743×346 16.1 KB\n\n\nimage\n592×247 10.6 KB"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "For the GA2, its better to submit all at once as a lot of the answer changes based on the time & duration from last run, as well as you need to make sure that the local servers are running. Token & codesapces timeout after a certain period and you need to redo those.\nEasiest way is to do till q8 one by one and anytime you like they are persistent, and for all the rest try to do them at a sitting and don’t close any of the servers (local apis, codespace, ngrok) till all submit"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Some submissions require live server, so you have to run that particular code everytime you are solving those questions."
+      }
+    ]
+  },
+  {
+    "title": "GA3 - Large Language Models - Discussion Thread [TDS Jan 2025]",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/ga3-large-language-models-discussion-thread-tds-jan-2025/163247",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Please post any questions related to Graded Assignment 3 - Large Language Models.\n\nImportant Instruction\n\nPlease use markdown code formatting (fenced code blocks) when sharing code in Discourse posts. This makes the code much easier to read and differentiate from non-code text. It also makes it easier for people to copy code snippets and run it themselves. See below code for example\n\nping exam.sanand.workers.dev\n\nPinging exam.sanand.workers.dev [104.21.31.149] with 32 bytes of data:\nReply from 104.21.31.149: bytes=32 time=9ms TTL=58\nReply from 104.21.31.149: bytes=32 time=8ms TTL=58\nReply from 104.21.31.149: bytes=32 time=8ms TTL=58\nReply from 104.21.31.149: bytes=32 time=9ms TTL=58\n\nPing statistics for 104.21.31.149:\n    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),\nApproximate round trip times in milli-seconds:\n    Minimum = 8ms, Maximum = 9ms, Average = 8ms\n\n\nVisit this link for more details: Extended Syntax | Markdown Guide.\n\nA friendly suggestion: kindly go through \nDiscourse Docs\n! \n\nDeadline:  Sunday, February 2, 2025 11:59 PM\n\n@carlton @Jivraj @Saransh_Saini"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "how to get the dummy API key?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi Nilay,\n\nIn order to make a api call to openai chat completions you are required to send authentication information(openai key) in headers. For first question of GA3 you don’t have to send actual(working) api key, any dummy api key would work(you can put your name, or tds anything works)\n\nkind regards"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "which API should i use in 7th question"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "need help in question 4th. how can i correct this json body? sir @Jivraj\n\n{\n  \"model\": \"gpt-4o-mini\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": \"Extract text from this image.\"\n    },\n    {\n      \"role\": \"user\",\n      \"content\": {\n        \"image_url\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAAUCAYAAABRY0PiAAAAAXNSR0IArs4c6QAACTlJREFUeF7tXTvPTV0QHq3wAyiIVotE5RIacYtEQkWhQzQKRCKiQSESt4oEFYlEgkTpUknQSlRCQaOQEK0v851M9uznnbXWnHP2e9738z2nO2evPWvWsy7zrJlZ6yz580f+CD9EgAgQASJABIgAESACgyGwhARrMCwpiAgQASJABIgAESAC/yIwFsH69Utk1y6RV6869J48Edm9u/ueKfPtm8jGjSJfvohs3izy7JnIixcie/Z0ci5dEjl1qt9L/j19cuiQyL17/TJPn/bloH6+9Pv3IkeOiDx/LrJiRbkNq1aJvHnTL+PlaJ1XrozasWxZ90Tlb9ok8vt3X8eSThF2+qZh5GWXxq/JWL16LjZDjXnth9OnRW7e7Ld3XPmGz4MH/TGUkaOYHz/e9cvly6N+tD5Q2Xfvily/npG2sGVQ90m1wfEWzaHDh0Xu3x/VsHSpyOvXIuvW9WtUfbR/7ePHK84v/ybKy9Rl75fmEOqi5WvzUetcu3bu2jEppnyPCBABIjApAmmCZYZbKzIjZoutLcCZMvq+LoKfP/eNoRIRM7RmKM6d6xZKI1dHj45+w+8qV/U5eLAzGvjdg2Tv629InlA//f7yZUyyTNcNG+YSLCQBtU4yYxQZRTMyEaFEmbMgWIjPpINvGoJVq3MWGEza5vl6D+eMYbBjRzeHdBzdutUnpRcu9ElWNId041PbqNhc2rKlI/WZugyL2hzSsaYf3EhFONo8iebQfOFOuUSACBCBEgJpgqWL4L59Io8f93e83th+/Nguo16YiMB4wqXK4q4eF2wjVObFWL585F1Dz020QPtdOO6GI6NvBuTGjb6nxe+uIy9T1jORISwRoYw6dRbkIqNvZsqRYGVQypWJ+sTP2ZUrR15j26CoVCRhpbHTIjm4AYnGakT4bJ6btwznUOmd0qbCPOskWLkxw1JEgAjMLwJpglVSI0MirMzDhyIHDtRDjFZPRMJwJ+uJz/r1IwOCJAi9SEaudBHWj9/Rl9oYEQEjV7qzf/So75HzbWiFK1A/H+ZRg3P+vMjOnSPvnhpJJLkYVty7V+THjz7RxLBOK+SIoSYjoUZizZBZSOjr1364TtsfYYZyz54VuXq1a5v3YhqGEbFGcq3hXRtjt2+LbNs2Cj/rx3T3IS8Lkfln9lvGS+hDX1pHhCeWqXmA/Bz6+XM0js+cEbl4sWtHTa8SESltDAxbJEKTEKzahqRG5jy5Ks0h1U89cHfuzA1jWhtM50+fRps/nR++3vldPimdCBABIlBGYCqClfGWRGVaHhBctFsGRBfU7dtj71ktTFgy3ghXS9/oOeaLmUxvaK1dJ0+OPGMYcrXvPrfF55hEIVkz7GaQsf2tPosMZsvjGIVCUQ6GsDw+isnWrXM9kDVdazlYijV6MzEE68meeTyi0HRrLGB4LOqTlqcuIljfv/dD3bUwXWZ+YD6jERzcYIwbIizNjXFChKpLJCfK96rlX2W9vDQIRIAIEIFZIDAVwUJCECkclSktylHyu4YUMwZkPgiWDwHWPBCl8Ix6ZPbv7/JHIgJlIU7FrhTC0d255YmpTh8+jGRG5BENfpZEWt/VCKn3zPmQboZg1QyoYYu61ojJJATL59FFRKhFPkseoUyYvDaZI4IVeX9qBxdqY9DnMpr3zw6UROE0Tz5LifAqp0VIa6H4FnFFD5cdpKnlQ5JgzcJksA4iQASyCExMsGxx9QQCKy2VaXmEcHdtoSmfsKtl/II6HwTL2tNauDPticiJnsKrkaXI4HuCFYVn8R1vLGskEduqIbZSLgu2t0WwzDuF/Vfyctlhhxo5nIRgYZ4f5ha1CJYf3+ihtDCh9mkm7OxlRQTLh7ozevnQt3qrfOi41I8l77InojUSVeqf7GEXj0F2DtXmYmueZhdFliMCRIAIDIHARARrGnKlSmcWU79YHjs2CvksFMFCwuevdMi2xzrLGyXNC7IcrRpZwpNgRspKOCJxQDJQ80qonpjXpb95cjYuwbL8OMyNiTxCprsSlejQguG4UATL51YZqdLxaeRN9fbXRWQm6RAECz1T2sdKVNVDWstJ8h5LlZHNg2uFb/1p3mhzgVeOZNYEPzYjbx4JVma0sQwRIAKzQmBsgjUtucoSElwso5NMkyS5o+cg622oeVOyxgGJmiVea7ivlsdl3gzM2cp4sHAg1a6niAad1fn2bZcTNC7BynqwjCQoKdA2q5Eu3ZG1EASrFLL0eCyUByvqu1bul+FtZEi/RyeFa6HoiLyVricZYg7ViB0J1qzMBushAkQgg8BYBGsIcoUES79Hngo0DkNe0xB5k8wrVcpBqpGoUn5RaRev9SupwnAfkj197u8pQkKVycEqGd7IkJYGDHqaIoKFbcV8s0wOltbvc8hKd495IuZz08xzFI2pqP5xQ4QRcTB916zpLsyN+r02GYfwYEXt83NGT3q2vFOlMqUQcGkMleZQ7cRxqX8wrFs7GUmClVnyWYYIEIFZIZAmWJg8HSmYKRN5sNAYRzkcKDtaTKMk8pqxi0jbUPkjkRwkTEoi7SZ5M26WkGxtsVNT797NvQohc4owamONLEbGEWXg+60TgpqgnCljY8rCcLWrCRbSg+WTxk1XvMpC22IX8rYM/xAEC8d+lDuFCeKTlokIrl8PhppDqF8k19fbwnlWiyrrIQJEgAgoAmmC5U/UIXRmXPQuIX/fkC/nj1fXvBn2TmRcMZdo2r/KaSXp4n1P+JcinhDgTlufYS4T5j7h6Uh/6krbduJE91c7pbursI7oHizsOzzqjp4cPB6PekeJ8/4dn//jk7Vr92D5v1uKTp7qu95jUiNYmt9jMkz3a9fm3lXW8mBF3hLERvtJ8+jwRnSfq6VjwSeaY71DECwjPf7vpqJDDahXVAbHS+nfBVrh9UxdrTmEY6Z2hxsJFo0aESACiwmBNMFaTEr/Tbq0jrpHngF/bcPfhIW1ZdyrJf5GDNgmIkAEiAAR+G8jQIK1CPrPdt7+cklUKxM2WwRNmVqF0p1nUwumACJABIgAESACM0SABGuGYLeqwhCoL5/5C5eW/MX+/P9CIhd7P1A/IkAEiAARmB4BEqzpMaQEIkAEiAARIAJEgAj0ECDB4oAgAkSACBABIkAEiMDACJBgDQwoxREBIkAEiAARIAJE4B9bNNpRhqK+YwAAAABJRU5ErkJggg==\"\n      }\n    }\n  ]\n}\n\n\n\nerror:The JSON body must have 1 message\n\n{\n  \"model\": \"gpt-4o-mini\",\n  \"messages\": [\n    {\n      \"role\": \"user\",\n      \"content\": {\n        \"text\": \"Extract text from this image.\",\n        \"image_url\": \"data:image/png;base64,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\"\n      }\n    }\n  ]\n}\n\n\n\nError: The message must have a 2 content parts"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@Jivraj @carlton sir plz see it once."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi @22f3001315 ,\n\nYou are almost correct, there are very minor changes that needs to be made.\n\nTake help from Chat GPT or use this documentation which have correct json body Vision - OpenAI API.\n\nKind regards\nJivraj"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "it worked thanks sir"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Are we supposed to buy open ai api key ?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "No, if you scroll down to the last question, we can get our Ai Proxy key"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "@nilaychugh @22f3002034\n\nThe API key is available at https://aiproxy.sanand.workers.dev/\n\nThe instructions on how to use the token is given at GitHub - sanand0/aiproxy: Authorizing proxy for LLMs\n\nYou cannot use this token directly with Open AI or any other gpt. These are only valid via the API exposed by the above instructions.\n\nYou get a limit of $1. Use with care.\n\nKind regards"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "but the embedding model that is said to be used is text embedding 3 small, which is the model of OpenAI"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi Nilay,\n\nYes you would need to use text-embedding-3-small model of openai for embedding questions.\n\nKind regards\nJivraj"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "i have a doubt, while submitting the GA3, both 7th and 8th questions require the API url to be active and connected right, but its not possible as both the URLs use same port, so if we check my 7th question URL is running right now, it’ll show as correct, but then if i run 8th question URL, the 7th question will automatically show the error, is there any solution to this problem?"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Q5. How to handle the error ? sir @Jivraj\n\nError: The first input does not match the first text exactly"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Q4. How to handle this error? @Jivraj\n\n{\n  \"id\": \"chatcmpl-AshDCPwSiXNao1QXmCxCmi63GifFx\",\n  \"object\": \"chat.completion\",\n  \"created\": 1737599182,\n  \"model\": \"gpt-4o-mini-2024-07-18\",\n  \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\": \"assistant\",\n        \"content\": \"The image contains an email address and a number. The email address appears to be associated with an educational institution, and the number seems to be a numerical sequence.\",\n        \"refusal\": null\n      },\n      \"logprobs\": null,\n      \"finish_reason\": \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 592,\n    \"completion_tokens\": 33,\n    \"total_tokens\": 625,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\": 0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\": {\n      \"reasoning_tokens\": 0,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\": 0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\": \"default\",\n  \"system_fingerprint\": \"fp_bd83329f63\",\n  \"monthlyCost\": 0.05490624000000001,\n  \"cost\": 0.001974,\n  \"monthlyRequests\": 14,\n  \"costError\": \"crypto.createHash is not a function\"\n}\n\n\nError: Model must be gpt-4o-mini"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi Nilay,\n\n nilaychugh:\n\nboth the URLs use same port,\n\nYou can run two servers on different port numbers."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi Vikash,\n\nI looked at your answers in backend. In answer you submitted response from openai, but you need to submit json object which is required for sending a request to LLM.\n\nKind regards"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "You made same mistake here, instead of response use json body that’s required for sending request to LLM.\n\nKind regards"
+      }
+    ]
+  },
+  {
+    "title": "Error for Vector Databases (1 mark)",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/error-for-vector-databases-1-mark/176823",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Hi ,\n\nI am getting the following error \"{‘error’: {‘message’: ‘You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.’, ‘type’: ‘insufficient_quota’, ‘param’: None, ‘code’: ‘insufficient_quota’}}\n\nPlease help.\nThanks\nRanadeep"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "github.com\nGitHub - sanand0/aipipe: Gives anyone access to an OpenAI/OpenRouter API...\n\nGives anyone access to an OpenAI/OpenRouter API key free at 10 cents/week. Self-hostable. Useful as a backend if you're building pure front-end LLM apps\n\nUse aipipe api insist of directly openai token\nUse Gpt4.1 nano model so that limit does not cross and send only limited request because younwill have limited quota."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": ""
+      }
+    ]
+  },
+  {
+    "title": "Project 1 deadline extension",
+    "url": "https://discourse.onlinedegree.iitm.ac.in/t/project-1-deadline-extension/176644",
+    "posts": [
+      {
+        "username": "",
+        "created_at": "",
+        "content": "I am writing to kindly request an extension for the submission of Project 1 for the TDS course. The current deadline of June 14 is unfortunately clashing with several other academic and co-curricular commitments.\n\nWe have Paradox Fest scheduled just before the deadline, along with multiple assignment submissions across other courses. Due to this, I am finding it difficult to allocate sufficient time and focus towards completing the project with the quality it deserves.\n\nI genuinely want to put in my best effort for this project and would be extremely grateful if the deadline could be extended by a few days to allow for proper completion."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes date shoud be extended."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes I support this.. Please extend the deadline. Many of us are beginners and need some more time to properly understand and make a project of this type"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes sir, due to paradox we can’t able to work during the timeline of 1st to 10th of june and 14th is the date for submission deadline. With all due respect i want you to see our concerns."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Please think about other students who have more than 2 projects also, kindly extend deadline"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Agreed, deadline should be extended for the project1.\nThis whole thing is kinda a lot to cover and as we’re beginners, the whole LLM thing is kinda taking time to process whole thing and I guess the coursework has been revamped a lot.\nAnd there’s a lot to cover along with this subject.\nSo kindly if deadline extension can be provided .."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes.. I also genuinely feel the deadline should be extended, because of Paradox fest. I’m a coordinator in the Culturals Team. We are dedicating more time in the fest than others, including reaching there earlier. Also, we have deadlines for other courses and projects as well. Please consider this and extend the deadline.\n\n@carlton @Jivraj @s.anand"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yeah, because of the paradox, it is tough for me to submit the project on 14\n. I would reach home at 11 or maybe 12 if the train is late. So it would be tough for me to submit the project on 14. Please give us 3-4 day extension"
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yes, we need time because after GA3 submission we will be in paradox and will be back by 10 June and deadline is 14 June, 4 days are not sufficient. Kindly please extend the deadline."
+      },
+      {
+        "username": "",
+        "created_at": "",
+        "content": "Yess Sir we need some time to properly learn and implement a project of this scale. Given we also have paradox, please think about us and extend the deadline sir. @carlton @s.anand @Jivraj"
+      }
+    ]
+  }
+]
